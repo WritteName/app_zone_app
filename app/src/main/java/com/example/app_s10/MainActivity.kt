@@ -3,6 +3,7 @@ package com.example.app_s10
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -23,8 +24,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var tvWelcome: TextView
     private lateinit var tvUserEmail: TextView
     private lateinit var btnLogout: MaterialButton
-    private lateinit var cardStats: CardView
-    private lateinit var cardAchievements: CardView
+    private lateinit var cardAddGame: CardView
+    private lateinit var cardViewGame: CardView
     private lateinit var cardProfile: CardView
     private lateinit var cardSettings: CardView
     
@@ -47,7 +48,7 @@ class MainActivity : AppCompatActivity() {
             redirectToLogin()
             return
         }
-        
+
         // Configurar UI
         setupUI()
         setupWindowInsets()
@@ -66,8 +67,8 @@ class MainActivity : AppCompatActivity() {
         tvWelcome = findViewById(R.id.tv_welcome)
         tvUserEmail = findViewById(R.id.tv_user_email)
         btnLogout = findViewById(R.id.btn_logout)
-        cardStats = findViewById(R.id.card_stats)
-        cardAchievements = findViewById(R.id.card_achievements)
+        cardAddGame = findViewById(R.id.card_add_game)
+        cardViewGame = findViewById(R.id.card_view_games)
         cardProfile = findViewById(R.id.card_profile)
         cardSettings = findViewById(R.id.card_settings)
     }
@@ -110,12 +111,14 @@ class MainActivity : AppCompatActivity() {
         }
         
         // Cards de navegación (placeholder por ahora)
-        cardStats.setOnClickListener {
-            showFeatureComingSoon("Estadísticas del Jugador")
+        cardAddGame.setOnClickListener {
+            val intent = Intent(this, AddGameActivity::class.java)
+            startActivity(intent)
         }
         
-        cardAchievements.setOnClickListener {
-            showFeatureComingSoon("Logros")
+        cardViewGame.setOnClickListener {
+            val intent = Intent(this, GamesListActivity::class.java)
+            startActivity(intent)
         }
         
         cardProfile.setOnClickListener {

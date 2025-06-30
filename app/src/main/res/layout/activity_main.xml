@@ -134,7 +134,7 @@
 
                 <!-- Estadísticas del jugador -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/card_stats"
+                    android:id="@+id/card_add_game"
                     android:layout_width="0dp"
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
@@ -153,13 +153,13 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:src="@drawable/ic_gaming_controller"
-                            android:tint="@color/gaming_neon_green" />
+                            app:tint="@color/gaming_neon_green" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="@string/player_stats"
+                            android:text="@string/addgame"
                             android:textColor="@color/gaming_text_primary"
                             android:textSize="14sp"
                             android:textStyle="bold"
@@ -171,7 +171,7 @@
 
                 <!-- Logros -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/card_achievements"
+                    android:id="@+id/card_view_games"
                     android:layout_width="0dp"
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
@@ -190,13 +190,13 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:src="@drawable/ic_gaming_controller"
-                            android:tint="@color/gaming_highlight" />
+                            app:tint="@color/gaming_highlight" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="@string/achievements"
+                            android:text="@string/viewgames"
                             android:textColor="@color/gaming_text_primary"
                             android:textSize="14sp"
                             android:textStyle="bold"
@@ -227,7 +227,7 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:src="@drawable/ic_gaming_controller"
-                            android:tint="@color/gaming_purple" />
+                            app:tint="@color/gaming_purple" />
 
                         <TextView
                             android:layout_width="wrap_content"

@@ -46,8 +46,8 @@
     <string name="main_subtitle">Tu zona de juego personalizada</string>
     
     <!-- Elementos de la interfaz -->
-    <string name="player_stats">Estadísticas del Jugador</string>
-    <string name="achievements">Logros</string>
+    <string name="addgame">Registrar Juego</string>
+    <string name="viewgames">Ver Juegos</string>
     <string name="settings">Configuración</string>
     <string name="profile">Perfil</string>
     
